@@ -1,0 +1,24 @@
+{
+  "name": "Persons-React",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Displays person data from a third party API.",
+  "author": "Daniel Kolsi",
+  "license": "",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "node server.js & react-scripts start",
+    "client": "react-scripts start",
+    "server": "node server.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0"
+  }
+}

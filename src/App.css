@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+table {
+			border-collapse: collapse;
+			width: 100%;
+			border: none;
+}
+
+td {
+
+      text-align: left;
+			padding: 6px;
+}
+
+td:nth-child(odd) {
+			padding-bottom: 20px
+}
+
+tr.name, tr.name td {
+			border-style: solid;
+			border-color: #CACACA #CACACA #E9E9E9;
+}
+
+tr.email, tr.email td {
+
+			border-style: solid;
+			border-color: #FFFFFF #CACACA #CACACA;
+}
+
+
+tr.space, tr.space td {
+
+			height: 7px;
+			padding: 0;
+			background-color: #ffffff;
+			border: none;
+}
+
+.topic {
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.confirm {
+      background-color:#76CCD3;
+			height: 40px;
+			width: 170px;
+      border: none;
+      font-size: 18px;
+}
