@@ -53,4 +53,8 @@ The fetched persons' names are in ascending alphabetical order according to the 
 As the assignment didn't exactly mention where to output the names when "Confirm" was clicked,
 the names will be outputted both to browser's console.log & to alert dialog.
 
+The source code has been validated and modified to comply with React specific linting (.eslintrc) linting rules.
+Some styling rules were omitted as "opinionated" or irrelevant - in any case each company has or
+should have their own styling conventions. 
+
 -- Daniel Kolsi (kolsi.daniel@gmail.com)
