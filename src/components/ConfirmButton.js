@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+var config = require('../config/Config.js');
 
+//confirms and outputs names from the selected records
 class ConfirmButton extends React.Component {
   constructor(props) {
     super(props);
     this.handleConfirmClick = this.handleConfirmClick.bind(this);
   }
-
 
   /*
   When the Confirm-button is clicked, selected names are outputed in
@@ -27,7 +28,7 @@ class ConfirmButton extends React.Component {
     if (this.props.selectedNames.length > 0) {
       alert(selectedNames);
     } else {
-      alert("No names were selected.");
+      alert(config.NO_NAMES_SELECTED);
     }
   }
 

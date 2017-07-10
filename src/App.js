@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 
 import RecordTable from './components/RecordTable';
@@ -6,6 +7,8 @@ import ConfirmButton from './components/ConfirmButton';
 
 import {sortBy} from 'lodash';
 import registerServiceWorker from './registerServiceWorker';
+
+var config = require('./config/Config.js');
 
 /*
 This is the main component which holds and renders all the other components and
@@ -18,10 +21,10 @@ class App extends React.Component {
     // fetches the data using back-end serving running in localhost port 4000
     // alternatively without the back-end this could be the final third party url from where
     // the JSON person records data is fetched
-    const SERVER_URL = "http://127.0.0.1:4000/api/";
+    //const SERVER_URL = "http://127.0.0.1:4000/api/";
 
     this.handleSelectedNames = this.handleSelectedNames.bind(this);
-    this.state = {data: [], url: SERVER_URL, selectedNames: []};
+    this.state = {data: [], url: config.SERVER_URL, selectedNames: []};
   }
 
   // this function will be passed "down" to the RecordTable to enable it to always update
@@ -48,9 +51,9 @@ class App extends React.Component {
 
   // sort data in ascending alphabetical order by the name
   processData(data) {
-    const SORTING_ORDER = 'name';
+
     // sort by 'name': default sorting order is ASCENDING alphabet order
-    var orderedData = sortBy(data, [SORTING_ORDER]);
+    var orderedData = sortBy(data, [config.SORTING_ORDER]);
 
     this.setState({
       data: orderedData
