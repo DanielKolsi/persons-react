@@ -28,7 +28,7 @@ class Persons extends React.Component {
   }
 
   // this function will be passed "down" to the RecordTable to enable it to always update
-  // the correct number of selected names in App's state
+  // the correct number of selected names in Person's state
   handleSelectedNames(selectedNames) {
     this.setState({selectedNames: selectedNames});
   }
