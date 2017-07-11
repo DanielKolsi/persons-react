@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+import './Persons.css';
 
 import RecordTable from './components/RecordTable';
 import ConfirmButton from './components/ConfirmButton';
@@ -15,7 +15,7 @@ This is the main component which holds and renders all the other components and
 information including RecordTables, ConfirmButton and HTML information string for keeping
 track of selected names (records).
 */
-class App extends React.Component {
+class Persons extends React.Component {
   constructor(props) {
     super(props);
     // fetches the data using back-end serving running in localhost port 4000
@@ -51,7 +51,6 @@ class App extends React.Component {
 
   // sort data in ascending alphabetical order by the name
   processData(data) {
-
     // sort by 'name': default sorting order is ASCENDING alphabet order
     var orderedData = sortBy(data, [config.SORTING_ORDER]);
 
@@ -115,4 +114,4 @@ class App extends React.Component {
 }
 
 registerServiceWorker();
-export default App;
+export default Persons;
