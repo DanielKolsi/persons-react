@@ -19,8 +19,9 @@ Execute the following commands:
 3) Surf your browser to: http://127.0.0.1/3000
 
 (**)
-This actually runs two different scripts. One for starting the server at localhost and the
-other for connecting to the server.
+This actually runs two different scripts. One for starting the server at localhost (port 4000) and the
+other for connecting to the server. IMPORTANT: Ensure that BOTH ports 3000 and 4000 are free! Otherwise
+a CORS issue will prevent the app from starting!
 
 The reason why I made the back-end was to demonstrate a
 full back-end React application. However, the app runs perfectly without back-end when the
